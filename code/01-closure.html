@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    <script>
+        //求平方
+        // function makePower (number) {
+        //     return function (power) {
+        //         return Math.pow(number, power)
+        //     }
+        // }
+        // let num = makePower(5);
+        // //5的二次方，三次方
+        // num(2);
+        // num(3);
+
+        //为不同级别的员工求他们的总工资（基本工资+绩效工资）
+        function makeSalary (base) {
+            return function (base, performance) {
+                return base + performance
+            }
+        }
+        let salary1 = makeSalary(1200)
+        let salary2 = makeSalary(1300)
+
+        salary1(200);
+        salary2(300);
+    </script>
+</body>
+</html>

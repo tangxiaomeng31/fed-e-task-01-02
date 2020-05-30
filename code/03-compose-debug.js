@@ -16,3 +16,6 @@ const map = _.curry((func, arr) => _.map(arr, func))
 const f = _.flowRight(join('-'), map(_.toLower), split(' '))
 
 console.log(f('NEVER SAY DIE'))
+
+
+

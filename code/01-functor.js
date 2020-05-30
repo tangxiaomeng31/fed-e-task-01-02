@@ -31,3 +31,4 @@ class Container {
 
 let r = Container.of(5)
             .map(x => x * x)
+
